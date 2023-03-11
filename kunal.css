@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.image{
+    display: flex; 
+background-color: darkgray;
+}
+img{
+    width: 50px;
+    height: 50px;
+    background-color: darkgray;
+}
+.image p{
+margin: 20px;
+margin-bottom: 20px;
+font-size:15px;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 3%;
+}
+
+.image div{
+    margin: 20px;
+    margin-bottom: 20px;
+
+    }
+.input {
+    display: flex;
+    margin: 50px;
+    margin-top:10px ;
+}
+.input p{
+    margin-left: 20px;
+margin-top:20px;
+}
+
