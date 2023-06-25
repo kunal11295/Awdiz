@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R</title>
+    <script src="https://kit.fontawesome.com/032f5a99f2.js" crossorigin="anonymous"></script>
+
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    #screen
+    {
+
+        width: 80%;
+        height:2200px;
+        /* border: 1px solid red; */
+        margin-left: 50px;
+        display: flex;
+    justify-content: right;
+    /* background-image: url("https://t4.ftcdn.net/jpg/01/70/93/27/360_F_170932733_VOHGeaH5AjrVCXBVryEwVgwhArv2wNNH.jpg") */
+    background-image:url("https://templatemo.com/templates/templatemo_531_reflux/assets/images/page-bg.jpg");
+}
+    #screen>div:nth-child(1)
+{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    background-color: brown;
+       
+}
+#screen>div:nth-child(1)>div:nth-child(1)
+{
+    height: 250px;
+
+}
+
+#screen>div:nth-child(1)>div:nth-child(1)>img{
+width: 120px;
+margin-left: 15px;
+border-radius: 50%;
+}
+#screen>div:nth-child(1)>div:nth-child(1)>h1
+{
+    font-size: 25px;
+    margin-left: 20px;
+}
+#screen>div:nth-child(1)>div:nth-child(1)>p
+{
+    
+    margin-left: 30px;
+}
+#screen>div:nth-child(1)>div:nth-child(2)
+{
+    height:100%;
+}
+
+#screen>div:nth-child(1)>div:nth-child(2)>p
+{
+   text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    /* border: 2px solid white ;/ */
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+#screen>div:nth-child(1)>div:nth-child(2)>i
+{
+    margin-left: 15px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+
+}
+#screen>div:nth-child(1)>div:nth-child(2)>span
+{
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+#screen>div:nth-child(2)
+{
+    width: 70%;
+    /* border: 1px solid red; */
+    height: 1000px;
+    
+}
+
+#screen>div:nth-child(2)>div:nth-child(1)>h1{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#screen>div:nth-child(2)>div:nth-child(1)>hr {
+           width: 10%;
+            height: 1px;
+            background-color: brown;
+            border: none;
+            margin-left: 45%;
+            margin-bottom: 10px;
+        }
+#screen>div:nth-child(2)>div:nth-child(1)>p
+{
+    color:white;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+#screen>div:nth-child(2)>div:nth-child(2)
+{
+    width: 100%;
+    height: 250px;
+    /* border: 1px solid red; */
+    display: flex;
+
+}
+#screen>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)
+{
+    /* border: 1px solid white; */
+    width: 50%;
+    height: 200px;
+    margin-left: 20px;
+}
+#screen>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>img{
+
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+#screen>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)
+{
+    width: 40%;
+    height: 200px;
+    /* border: 1px solid white; */
+    margin-left: 20px;
+}
+#screen>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>h3{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+#screen>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>p{
+    color: white;
+    font-size: 13px;
+    margin-bottom: 30px;   
+}
+
+#screen>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>span{
+    color:brown;
+    border: 1px solid white;
+    font-size: 13px;
+    background-color: white;
+    padding: 8px 8px;
+}
+#screen>div:nth-child(2)>div:nth-child(4)
+{
+    width: 100%;
+    height: 250px;
+    /* border: 1px solid white; */
+    display: flex;
+    margin-left: 25px;
+}
+#screen>div:nth-child(2)>div:nth-child(4)>div:nth-child(1)
+{
+    width: 40%;
+    height: 200px;
+    /* border: 1px solid white;  */
+
+}
+#screen>div:nth-child(2)>div:nth-child(4)>div:nth-child(1)>h3{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+#screen>div:nth-child(2)>div:nth-child(4)>div:nth-child(1)>p{
+    color: white;
+    font-size: 13px;
+    margin-bottom: 30px;   
+}
+
+#screen>div:nth-child(2)>div:nth-child(4)>div:nth-child(1)>span{
+    color:brown;
+    border: 1px solid white;
+    font-size: 13px;
+    background-color: white;
+    padding: 8px 8px;
+}
+#screen>div:nth-child(2)>div:nth-child(4)>div:nth-child(2)
+{
+    width: 50%;
+    height: 200px;
+    /* border: 1px solid white; */
+    margin-left: 15px;
+}
+#screen>div:nth-child(2)>div:nth-child(4)>div:nth-child(2)>img{
+
+width: 100%;
+height: 200px;
+border-radius: 10px;
+}
+#screen>div:nth-child(2)>div:nth-child(6)
+{
+    /* border: 1px solid white; */
+   
+    height: 600px;
+}
+#screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(1)
+{
+    margin-bottom: 20px;
+    text-align: center;
+}
+#screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(1)>h2{
+    margin-bottom: 10px;
+    color: white;
+}
+#screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(1)>hr {
+  width: 10%;
+    height: 1px;
+    background-color: brown;
+    border: none;
+    margin-left: 45%;
+    margin-bottom: 10px;
+ }
+#screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(1)>p{
+    color: white;
+ }
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)
+ {
+    /* border: 1px solid white; */
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+ }
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div{
+    width: 40%;
+    height: 200px;
+    border: 1px solid grey;
+    margin-left: 20px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+ }
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(1)>i
+ {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white;
+    border: 3px solid white;
+    border-radius:30%;
+    padding: 5px 5px;
+ } 
+
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(1)>h1
+ {
+     color: white;
+     font-size: 20px;
+     margin-left: 20px;
+     margin-bottom: 10px;
+     margin-top: 5px;
+ } 
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(1)>p{
+    color:white;
+    font-size: 14px;
+    margin-left: 10px;
+ }
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(2)>i
+ {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white;
+    border: 3px solid white;
+    border-radius:30%;
+    padding: 5px 5px;
+ } 
+
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(2)>h1
+ {
+     color: white;
+     font-size: 20px;
+     margin-left: 20px;
+     margin-bottom: 10px;
+     margin-top: 5px;
+ } 
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(2)>p{
+    color:white;
+    font-size: 14px;
+    margin-left: 10px;
+ } 
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(3)>i
+ {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white;
+    border: 3px solid white;
+    border-radius:30%;
+    padding: 5px 5px;
+ } 
+
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(3)>h1
+ {
+     color: white;
+     font-size: 20px;
+     margin-left: 20px;
+     margin-bottom: 10px;
+     margin-top: 5px;
+ } 
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(3)>p{
+    color:white;
+    font-size: 14px;
+    margin-left: 10px;
+ } 
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(4)>i
+ {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white;
+    border: 3px solid white;
+    border-radius:30%;
+    padding: 5px 5px;
+ } 
+
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(4)>h1
+ {
+     color: white;
+     font-size: 20px;
+     margin-left: 20px;
+     margin-bottom: 10px;
+     margin-top: 5px;
+ } 
+ #screen>div:nth-child(2)>div:nth-child(6)>div:nth-child(2)>div:nth-child(4)>p{
+    color:white;
+    font-size: 14px;
+    margin-left: 10px;
+ } 
+ #screen>div:nth-child(2)>div:nth-child(8)
+ {
+    width: 100%;
+    height: 650px;
+    /* border: 1px solid white; */
+ }
+ #screen>div:nth-child(2)>div:nth-child(8)>div:nth-child(1)
+ {
+    width: 100%;
+    height: 175px;
+    /* border: 1px solid white; */
+ }
+ #screen>div:nth-child(2)>div:nth-child(8)>div:nth-child(1)>div:nth-child(1)>h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+ }
+ #screen>div:nth-child(2)>div:nth-child(8)>div:nth-child(1)>div:nth-child(1)>p{
+    color: white;
+    text-align: center; 
+    margin-bottom: 50px;
+ }
+ #screen>div:nth-child(2)>div:nth-child(8)>div:nth-child(1)>div:nth-child(2)
+ {
+    display: flex;
+    margin-left: 150px;
+    /* justify-content: space-between;      */
+
+ }
+ #screen>div:nth-child(2)>div:nth-child(8)>div:nth-child(1)>div:nth-child(2)>h4
+ {
+    font-size: 15px;
+    color: white;
+    width: 55px;
+ }
+ #screen>div:nth-child(2)>div:nth-child(8)>div:nth-child(2)>div:nth-child(1)
+ {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-top: 20px;
+ }
+ #screen>div:nth-child(2)>div:nth-child(8)>div:nth-child(2)>div:nth-child(1)>div{
+    width: 40%;
+    height: 150px;
+    border: 1px solid white;
+ }
+ #screen>div:nth-child(2)>div:nth-child(8)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>img
+ {
+    width: 100%;
+    height: 100%;
+ }
+ #screen>div:nth-child(2)>div:nth-child(8)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>img
+ {
+    width: 100%;
+    height: 100%;
+ }
+ #screen>div:nth-child(2)>div:nth-child(8)>div:nth-child(2)>div:nth-child(1)>div:nth-child(3)>img
+ {
+    width: 100%;
+    height: 100%;
+ }
+ #screen>div:nth-child(2)>div:nth-child(8)>div:nth-child(2)>div:nth-child(1)>div:nth-child(4)>img
+ {
+    width: 100%;
+    height: 100%;
+ }
+ #screen>div:nth-child(2)>div:nth-child(8)>div:nth-child(2)>div:nth-child(1)>div:nth-child(5)>img
+ {
+    width: 100%;
+    height: 100%;
+ }
+ #screen>div:nth-child(2)>div:nth-child(8)>div:nth-child(2)>div:nth-child(1)>div:nth-child(6)>img
+ {
+    width: 100%;
+    height: 100%;
+ }
+
+</style>
+</head>
+<body>
+    <div id="screen">
+    
+        <div>
+            <div>
+            <img src="https://templatemo.com/templates/templatemo_531_reflux/assets/images/author-image.jpg">
+            <h1>Reflux Me</h1>
+            <p>Web Designer</p>
+            </div>
+            
+            <div>
+                <p>About</p>
+                <p>what im good at</p>
+                <p>My work</p>
+                <p>Contact Me</p>
+
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+
+                <span>Copyright 2019 Reflux Design</span>
+            </div>
+            
+           
+        </div>
+    
+    
+        <div>
+            <div>
+            <h1>About Me</h1>
+            <hr>
+            <p>This is a Bootstrap v4.2.1 CSS Template for you. Edit and use this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</p>
+            </div>
+            <div>
+                <div>
+                    <img src="https://templatemo.com/templates/templatemo_531_reflux/assets/images/left-image.jpg" alt="image">
+                    
+                </div>
+                <div>
+                    <h3>Reflux HTML CSS Template</h3>
+                    <p>Donec tristique feugiat lacus, at sollicitudin nunc euismod sed. Mauris viverra, erat non sagittis gravida, elit dui mollis ante, sit amet eleifend purus ligula eget eros. Sed tincidunt quam vitae neque pharetra dignissim eget ut libero.</p>
+                    <span>READ MORE</span>
+                    
+                </div>
+            </div>
+            <div>
+                <hr style="width: 90%; margin-left: 20px; margin-bottom: 20px;">
+            </div>
+            
+            <div>
+                <div>
+                    <h3>Sed sagittis rhoncus velit</h3>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum fermentum eleifend nibh, vitae sodales elit finibus pretium. Suspendisse potenti. Ut sollicitudin risus a sollicitudin semper.</p>
+                    <span>READ MORE</span>
+                </div>
+                <div>
+                    <img src="https://templatemo.com/templates/templatemo_531_reflux/assets/images/right-image.jpg">
+                </div>
+                
+            </div>
+            <div>
+                <hr style="width: 90%; margin-left: 20px; margin-bottom: 20px;">
+            </div>
+            
+            <div>
+                <div>
+                    <h2>What I’m good at?</h2>
+                    <hr>
+                    <p>Curabitur leo felis, rutrum vitae varius eu, malesuada a tortor. Vestibulum congue leo et tellus aliquam, eu viverra nulla semper. Nullam eu faucibus diam. Donec eget massa ante.</p>
+                </div>
+             <div>
+                <div>
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <h1>HTML5 & CSS3</h1>
+                    <p>Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum. Sed ac ante non metus vehicula congue quis eget eros</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <h1>Creative Ideas</h1>
+                    <p>Proin lacus massa, eleifend sed fermentum in, dignissim vel metus. Nunc accumsan leo nec felis porttitor, ultricies faucibus purus mollis</p> 
+                </div>
+                <div>
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <h1>Easy Customize</h1>
+                    <p>Integer suscipit condimentum aliquet. Nam quis risus metus. Nullam faucibus quam eget arcu pretium tincidunt. Nam libero dui.</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <h1>Admin Dashboard</h1>
+                    <p>Vivamus et dui a massa venenatis fringilla. Proin lacus massa, eleifend sed fermentum in, dignissim vel metus. Nunc accumsan leo nec felis porttitor.</p> 
+                </div>
+                
+             </div>
+             
+            </div>
+            <div>
+                <hr style="width: 90%; margin-left: 20px; margin-bottom: 20px;">  
+            </div>
+            <div>
+                <div>
+                    <div>
+                    <h1>My Work</h1>
+                    <p>Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit amet. Duis ac elit vulputate, lobortis arcu quis, vehicula mauris.</p>
+                    </div>
+                    <div>
+                    <h4>All</h4>
+                    <h4>People</h4>
+                    <h4>nature</h4>
+                    <h4>animal</h4>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <img src="https://templatemo.com/templates/templatemo_531_reflux/assets/images/portfolio-01.jpg">
+                        </div>
+                        <div>
+                            <img src="https://templatemo.com/templates/templatemo_531_reflux/assets/images/portfolio-02.jpg">
+                        </div>
+                        <div>
+                            <img src="https://templatemo.com/templates/templatemo_531_reflux/assets/images/portfolio-02.jpg">
+                        </div>
+                        <div>
+                            <img src="https://templatemo.com/templates/templatemo_531_reflux/assets/images/portfolio-04.jpg">
+                        </div>
+                        <div>
+                            <img src="https://templatemo.com/templates/templatemo_531_reflux/assets/images/portfolio-05.jpg">
+                        </div>
+                        <div>
+                            <img src="https://templatemo.com/templates/templatemo_531_reflux/assets/images/portfolio-05.jpg">
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+      
+        
+            
+    </div>
+
+
+</body>
+</html>
